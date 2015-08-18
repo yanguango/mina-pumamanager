@@ -25,10 +25,10 @@ Make sure the following settings are set in your `config/deploy.rb`:
 * `shared_path` - shared files path
 
 ## Tasks
-* pumamanager:setup - setup config files for puma-manager
-* pumamanager:start - start puma-manager
-* pumamanager:stop - stop puma-manager
-* pumamanager:restart - restart puma-manager
+* `pumamanager:setup` - setup config files for puma-manager
+* `pumamanager:start` - start puma-manager
+* `pumamanager:stop` - stop puma-manager
+* `pumamanager:restart` - restart puma-manager
 
 ## Development
 
