@@ -21,15 +21,14 @@ Add this to your `config/deploy.rb` file:
     require 'mina/puma'
 
 Make sure the following settings are set in your `config/deploy.rb`:
-    * `deploy_to`   - deployment path
-    * `shared_path` - shared files path
+* `deploy_to`   - deployment path
+* `shared_path` - shared files path
 
 ## Tasks
-
-    * pumamanager:setup - setup config files for puma-manager
-    * puma-manager:start - start puma-manager
-    * puma-manager:stop - stop puma-manager
-    * puma-manager:restart - restart puma-manager
+* pumamanager:setup - setup config files for puma-manager
+* pumamanager:start - start puma-manager
+* pumamanager:stop - stop puma-manager
+* pumamanager:restart - restart puma-manager
 
 ## Development
 
