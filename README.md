@@ -1,16 +1,10 @@
 # Mina::Pumamanager
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mina/pumamanager`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'mina-pumamanager'
-```
+    gem 'mina-pumamanager', require: false
 
 And then execute:
 
@@ -22,7 +16,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this to your `config/deploy.rb` file:
+
+    require 'mina/puma'
+
+Make sure the following settings are set in your `config/deploy.rb`:
+    * `deploy_to`   - deployment path
+    * `shared_path` - shared files path
+
+## Tasks
+
+    * pumamanager:setup - setup config files for puma-manager
+    * puma-manager:start - start puma-manager
+    * puma-manager:stop - stop puma-manager
+    * puma-manager:restart - restart puma-manager
 
 ## Development
 
@@ -38,4 +45,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
